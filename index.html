@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-20">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLIPPAGEMAXXING</title>
+<meta name="description" content="A fork of the looksmaxxing philosophy for traders seeking execution perfection.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  /* Custom Font setup for Tailwind */
+  @theme {
+    --font-sans: 'Inter', sans-serif;
+    --font-display: 'Space Grotesk', sans-serif;
+  }
+  
+  body {
+    background-color: #000;
+    color: #e5e5e5;
+  }
+
+  /* Stripe Background */
+  .bg-stripe {
+    background-image: repeating-linear-gradient(
+      45deg,
+      #FFD400,
+      #FFD400 20px,
+      #000 20px,
+      #000 40px
+    );
+    opacity: 0.05;
+  }
+</style>
+</head>
+
+<body class="antialiased selection:bg-yellow-400 selection:text-black pb-safe">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-yellow-500/20">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+    <!-- NAV LOGO: Added whitespace-nowrap to prevent breaking -->
+    <div class="flex items-center gap-0 font-display font-bold text-lg md:text-xl tracking-tighter whitespace-nowrap">
+      SLIPPAGE<span class="text-[#FFD400]">MAXXING</span>
+    </div>
+    
+    <a href="#buy" class="group px-4 py-2 md:px-5 md:py-2 bg-[#FFD400] text-black font-bold text-sm md:text-base hover:bg-white transition-all active:scale-95 shadow-lg whitespace-nowrap">
+      Buy $SLIPPAGE
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-4 md:px-6 overflow-hidden">
+  
+  <!-- Background Effects -->
+  <div class="absolute inset-0 bg-stripe z-0"></div>
+  <!-- Glow effect behind the banana -->
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] md:w-[300px] md:h-[300px] bg-[#FFD400] rounded-full blur-[100px] opacity-20 z-0 pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-4xl flex flex-col items-center w-full">
+
+    <!-- Banana Logo Image -->
+    <div class="mb-6 md:mb-8 drop-shadow-[0_0_15px_rgba(255,212,0,0.6)]">
+        <img 
+            src="banana.png" 
+            alt="Slippagemaxxing Logo" 
+            class="w-32 h-32 md:w-40 md:h-40 object-contain mx-auto"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        >
+        <!-- Fallback if image is missing -->
+        <div class="hidden w-32 h-32 items-center justify-center bg-yellow-500/20 rounded-full border border-yellow-500/50 mx-auto">
+            <span class="text-xs text-yellow-500 font-bold">NO IMG</span>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER: Added whitespace-nowrap to force it onto one line -->
+    <h1 class="font-display text-4xl md:text-6xl font-bold mb-6 leading-none tracking-tighter px-2 whitespace-nowrap">
+      SLIPPAGE<span class="text-[#FFD400]">MAXXING</span>
+    </h1>
+
+    <div class="space-y-2 mb-10 px-4">
+      <p class="text-base md:text-lg text-[#FFD400] font-semibold uppercase tracking-widest">
+        For traders seeking execution perfection
+      </p>
+    </div>
+
+    <div class="flex flex-col w-full max-w-xs md:max-w-none md:flex-row gap-4">
+      <a href="#buy" class="px-8 py-4 bg-[#FFD400] text-black font-bold text-lg hover:bg-white transition-all duration-200 w-full md:w-auto text-center rounded-sm">
+        Begin Slippagemaxxing
+      </a>
+    </div>
+    
+    <div class="mt-12 animate-bounce text-gray-500">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+    </div>
+  </div>
+</header>
+
+<!-- WHAT IS SLIPPAGE -->
+<section class="py-16 md:py-24 bg-black border-t border-yellow-500/20 relative">
+  <div class="max-w-5xl mx-auto px-4 md:px-6">
+    
+    <div class="text-center mb-12">
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-6 text-[#FFD400]">
+        WHAT IS SLIPPAGE?
+      </h2>
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        Slippage is the difference between the expected price of a trade and the price at which it actually executes.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      
+      <!-- Factors -->
+      <div class="space-y-4">
+        <h3 class="text-white font-bold border-l-4 border-[#FFD400] pl-3 text-lg">THE FACTORS</h3>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-3 text-gray-300">
+            <span class="w-1.5 h-1.5 bg-gray-600 rounded-full"></span> Volatility
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <span class="w-1.5 h-1.5 bg-gray-600 rounded-full"></span> Low liquidity
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <span class="w-1.5 h-1.5 bg-gray-600 rounded-full"></span> Large orders
+          </li>
+          <li class="flex items-center gap-3 text-gray-300">
+            <span class="w-1.5 h-1.5 bg-gray-600 rounded-full"></span> Network delays
+          </li>
+          <li class="flex items-center gap-3 text-[#FFD400] font-bold bg-[#FFD400]/10 p-3 rounded border border-[#FFD400]/20">
+            <span class="w-1.5 h-1.5 bg-[#FFD400] rounded-full animate-pulse"></span> Emotional trading
+          </li>
+        </ul>
+      </div>
+
+      <!-- The Twist -->
+      <div class="relative group">
+        <div class="absolute -inset-1 bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+        <div class="relative bg-black border border-yellow-500/30 p-6 md:p-8 rounded-lg h-full flex flex-col justify-center">
+          <h3 class="text-[#FFD400] font-display font-bold text-xl md:text-2xl mb-4">THE TWIST</h3>
+          <p class="text-base md:text-lg text-gray-300 leading-relaxed">
+            Slippagemaxxing isn't about avoiding slippage. It is the discipline of <span class="text-white font-bold">accepting reality</span> and evolving beyond it.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DOCTRINE -->
+<section class="py-16 md:py-24 bg-neutral-900 border-t border-yellow-500/20">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+    
+    <!-- Centered Header Layout -->
+    <div class="text-center mb-12">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-[#FFD400]">
+        THE DOCTRINE
+      </h2>
+      <p class="text-gray-500 text-sm mt-2">Internalize these principles.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+      <!-- Card 1 -->
+      <div class="p-5 bg-black border border-gray-800 hover:border-[#FFD400] transition-colors duration-300 group">
+        <div class="text-[#FFD400] text-3xl mb-3 opacity-50 group-hover:opacity-100 transition-opacity">01</div>
+        <h3 class="font-display font-bold text-white text-lg mb-2">Surrender</h3>
+        <p class="text-gray-400 text-sm">You cannot defeat the market.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p-5 bg-black border border-gray-800 hover:border-[#FFD400] transition-colors duration-300 group">
+        <div class="text-[#FFD400] text-3xl mb-3 opacity-50 group-hover:opacity-100 transition-opacity">02</div>
+        <h3 class="font-display font-bold text-white text-lg mb-2">Preparation</h3>
+        <p class="text-gray-400 text-sm">Prepare your execution.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-5 bg-black border border-gray-800 hover:border-[#FFD400] transition-colors duration-300 group">
+        <div class="text-[#FFD400] text-3xl mb-3 opacity-50 group-hover:opacity-100 transition-opacity">03</div>
+        <h3 class="font-display font-bold text-white text-lg mb-2">Patience</h3>
+        <p class="text-gray-400 text-sm">Slippage punishes impatience.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="p-5 bg-black border border-gray-800 hover:border-[#FFD400] transition-colors duration-300 group">
+        <div class="text-[#FFD400] text-3xl mb-3 opacity-50 group-hover:opacity-100 transition-opacity">04</div>
+        <h3 class="font-display font-bold text-white text-lg mb-2">Discipline</h3>
+        <p class="text-gray-400 text-sm">Discipline beats speed.</p>
+      </div>
+    </div>
+
+    <!-- Banana Divider Icon -->
+    <div class="mt-16 text-center relative">
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-neutral-900 px-4">
+            <img src="banana.png" alt="Icon" class="w-8 h-8 object-contain opacity-80" onerror="this.style.display='none'">
+        </div>
+       <hr class="border-gray-800">
+    </div>
+
+  </div>
+</section>
+
+<!-- HOW TO -->
+<section id="buy" class="py-20 md:py-24 bg-black border-t border-yellow-500/20 relative overflow-hidden">
+  <!-- Subtle Glow -->
+  <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#FFD400] rounded-full blur-[150px] opacity-5 pointer-events-none"></div>
+
+  <div class="max-w-4xl mx-auto px-4 md:px-6 text-center relative z-10">
+
+    <h2 class="font-display text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-[#FFD400]">
+      HOW TO SLIPPAGEMAXX
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16 text-left">
+      <div class="flex flex-col gap-3">
+        <span class="text-4xl font-display font-bold text-white/10">01</span>
+        <h3 class="font-bold text-white text-lg">Awareness</h3>
+        <p class="text-gray-400 text-sm md:text-base">Max slippage awareness. Accept the volatility.</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="text-4xl font-display font-bold text-white/10">02</span>
+        <h3 class="font-bold text-white text-lg">Acquisition</h3>
+        <p class="text-gray-400 text-sm md:text-base">Buy $SLIPPAGE on the open market.</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="text-4xl font-display font-bold text-white/10">03</span>
+        <h3 class="font-bold text-white text-lg">Storage</h3>
+        <p class="text-gray-400 text-sm md:text-base">Secure your bag. Hold with diamond hands.</p>
+      </div>
+    </div>
+
+    <div class="space-y-6 max-w-md mx-auto">
+      <a href="#" class="block w-full px-8 py-4 bg-[#FFD400] text-black font-bold text-lg hover:bg-white transition-all duration-200 shadow-[0_0_20px_rgba(255,212,0,0.4)] rounded-sm">
+        BUY $SLIPPAGE NOW
+      </a>
+      
+      <!-- Contract Address Copy Feature -->
+      <div class="p-3 bg-neutral-900 rounded border border-gray-800 flex items-center justify-between cursor-pointer hover:border-[#FFD400]/50 transition-colors active:bg-neutral-800" onclick="copyContract()">
+        <span class="text-gray-400 font-mono text-xs truncate" id="contractAddress">0x1234...SLIPPAGE...5678</span>
+        <button class="text-[#FFD400] text-xs font-bold uppercase ml-2">Copy</button>
+      </div>
+    </div>
+
+    <p class="text-gray-600 text-[10px] md:text-xs mt-6 uppercase tracking-widest">
+      Not financial advice. Just a vibe.
+    </p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 border-t border-gray-900 bg-black text-center">
+  <p class="text-gray-600 text-xs">
+    © 2026 Slippagemaxxing. All rights reserved.
+  </p>
+</footer>
+
+<script>
+  // Simple Copy to Clipboard function
+  function copyContract() {
+    const address = document.getElementById('contractAddress').innerText;
+    navigator.clipboard.writeText(address).then(() => {
+      const btn = document.querySelector('#buy button');
+      const originalText = btn.innerText;
+      btn.innerText = "Copied!";
+      btn.classList.add('text-green-400');
+      setTimeout(() => {
+        btn.innerText = originalText;
+        btn.classList.remove('text-green-400');
+      }, 2000);
+    });
+  }
+</script>
+
+</body>
+</html>
